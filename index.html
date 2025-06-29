@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/logo/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/bold/style.css">
@@ -190,6 +190,214 @@
 
                         </div>
                     </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header bg-white border-bottom-0 box-shadow-3xl py-10 z-2">
+            <div class="container container-lg">
+                <!-- ناوبری اصلی -->
+                <nav class="header-inner d-flex justify-content-between gap-8">
+
+                    <!-- بخش دسته‌بندی‌ها -->
+                    <div class="flex-align menu-category-wrapper position-relative">
+                        <div class="position-relative category-dropdown-wrapper">
+                            <!-- دکمه نمایش لیست دسته‌بندی -->
+                            <button type="button"
+                                class="category-button d-flex align-items-center gap-12 text-white bg-success-600 px-20 py-16 rounded-6 hover-bg-success-700 transition-2">
+                                <!-- آیکون چهارخانه -->
+                                <span class="text-xl line-height-1">
+                                    <i class="ph ph-squares-four"></i>
+                                </span>
+                                <!-- متن دکمه -->
+                                <span>دسته بندی ها</span>
+                                <!-- آیکون فلش پایین -->
+                                <span class="line-height-1 icon transition-2">
+                                    <i class="ph ph-caret-down"></i>
+                                </span>
+                            </button>
+                            <!----> <!-- جایگاه داینامیک منوی بازشونده -->
+                        </div>
+
+                        <!-- منوی اصلی (دسکتاپ) -->
+                        <div class="header-menu d-lg-block d-none">
+                            <ul class="nav-menu flex-align">
+
+                                <!-- آیتم منوی دموها -->
+                                <li class="on-hover-item nav-menu__item has-submenu activePage">
+                                    <a href="javascript:void(0)" class="nav-menu__link text-heading-two">
+                                        دموها
+                                    </a>
+                                    <!-- زیرمنو دموها -->
+                                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                        <li class="common-dropdown__item nav-submenu__item activePage">
+                                            <a href="/"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">دموی
+                                                خواربار</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/index-two"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">دموی
+                                                الکترونیک</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/index-three"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">دموی
+                                                مد</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- آیتم منوی فروشگاه -->
+                                <li class="on-hover-item nav-menu__item has-submenu">
+                                    <a href="javascript:void(0)" class="nav-menu__link text-heading-two">
+                                        فروشگاه
+                                    </a>
+                                    <!-- زیرمنوی فروشگاه -->
+                                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/shop"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">فروشگاه</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/product-details"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">جزئیات
+                                                محصول</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/product-details-two"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">دموی
+                                                دوم جزئیات محصول</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- آیتم منوی صفحات با نشان "جدید" -->
+                                <li class="on-hover-item nav-menu__item has-submenu">
+                                    <!-- نشان جدید -->
+                                    <span
+                                        class="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
+                                        جدید
+                                    </span>
+                                    <a href="javascript:void(0)" class="nav-menu__link text-heading-two">
+                                        صفحات
+                                    </a>
+                                    <!-- زیرمنوی صفحات -->
+                                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/cart"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">سبد
+                                                خرید</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/wishlist"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">لیست
+                                                علاقه مندی ها</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/checkout"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">صفحه
+                                                پرداخت</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/become-seller"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">فروشنده
+                                                شوید</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/account"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">حساب
+                                                کاربری</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- آیتم منوی فروشندگان با نشان "جدید" -->
+                                <li class="on-hover-item nav-menu__item has-submenu">
+                                    <span
+                                        class="badge-notification bg-tertiary-600 text-white text-sm py-2 px-8 rounded-4">
+                                        جدید
+                                    </span>
+                                    <a href="javascript:void(0)" class="nav-menu__link text-heading-two">
+                                        فروشندگان
+                                    </a>
+                                    <!-- زیرمنوی فروشندگان -->
+                                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/vendor"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">فروشندگان</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/vendor-details"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">جزئیات
+                                                فروشنده</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/vendor-two"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">دموی
+                                                دوم فروشندگان</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/vendor-two-details"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">دموی
+                                                دوم جزئیات فروشنده</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- آیتم منوی وبلاگ -->
+                                <li class="on-hover-item nav-menu__item has-submenu">
+                                    <a href="javascript:void(0)" class="nav-menu__link text-heading-two">
+                                        وبلاگ
+                                    </a>
+                                    <!-- زیرمنوی وبلاگ -->
+                                    <ul class="on-hover-dropdown common-dropdown nav-submenu scroll-sm">
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/blog"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">وبلاگ</a>
+                                        </li>
+                                        <li class="common-dropdown__item nav-submenu__item">
+                                            <a href="/blog-details"
+                                                class="common-dropdown__link nav-submenu__link text-heading-two hover-bg-neutral-100">جزئیات
+                                                وبلاگ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- لینک تماس با ما -->
+                                <li class="nav-menu__item">
+                                    <a routerlink="/contact" class="nav-menu__link text-heading-two"
+                                        href="/contact">تماس با ما</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- بخش سمت راست هدر -->
+                    <div class="header-right flex-align gap-20">
+                        <!-- لینک تماس تلفنی (دسکتاپ) -->
+                        <a href="tel:+989123456789" class="d-sm-flex align-items-center gap-16 d-none">
+                            <!-- آیکون موبایل -->
+                            <span class="d-flex text-32">
+                                <img src="images/icon/mobile.png" alt="Mobile Icon">
+                            </span>
+                            <!-- متن و شماره تماس -->
+                            <span>
+                                <span class="d-block text-heading fw-medium">
+                                    سوالی دارید! با ما تماس بگیرید
+                                </span>
+                                <span class="d-block fw-bold text-main-600 hover-text-decoration-underline">
+                                    6789 345 0912
+                                </span>
+                            </span>
+                        </a>
+
+                        <!-- دکمه منوی موبایل -->
+                        <button type="button" class="toggle-mobileMenu d-lg-none ms-3n text-gray-800 text-4xl d-flex">
+                            <!-- آیکون همبرگر -->
+                            <i class="ph ph-list"></i>
+                        </button>
+                    </div>
+
                 </nav>
             </div>
         </div>
