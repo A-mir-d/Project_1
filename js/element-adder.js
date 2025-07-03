@@ -1,5 +1,5 @@
 window.onload = function () {
-    const codesToLoad = ["my-header", "my-footer"];
+    const codesToLoad = ["my-header", "my-footer", "my-section_shipping"];
 
     codesToLoad.forEach(function (elementId) {
         const filePath = "../" + elementId + ".html";
