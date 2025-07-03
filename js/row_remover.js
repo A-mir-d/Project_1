@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tbody.addEventListener('click', function (event) {
         const btn = event.target.closest('.remove-tr-btn');
-        console.log(btn);
         
         if (!btn) { return }
 
