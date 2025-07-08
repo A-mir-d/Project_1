@@ -12,7 +12,7 @@ window.onload = function () {
                 document.getElementById(elementId).innerHTML = htmlContent;
                 //header-scripts_start
                 if (elementId === "my-header") {
-                    const scriptPath = ["js/drop-down_menu_opener.js", "js/timer_counter.js"]
+                    const scriptPath = ["js/drop-down_menu_opener.js", "js/timer_counter.js","js/header_search-box_drop-down_opener.js"]
                     scriptPath.forEach(function (path) {
                         const headerScript = document.createElement("script");
                         headerScript.src = path;
