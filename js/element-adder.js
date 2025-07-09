@@ -12,7 +12,8 @@ window.onload = function () {
                 document.getElementById(elementId).innerHTML = htmlContent;
                 //header-scripts_start
                 if (elementId === "my-header") {
-                    const scriptPath = ["js/drop-down_menu_opener.js", "js/timer_counter.js","js/header_search-box_drop-down_opener.js"]
+                    const scriptPath = ["js/drop-down_menu_opener.js", "js/timer_counter.js",
+                        "js/header_search-box_drop-down_opener.js", "js/nav-menu_title_highlighter.js"]
                     scriptPath.forEach(function (path) {
                         const headerScript = document.createElement("script");
                         headerScript.src = path;
@@ -20,10 +21,10 @@ window.onload = function () {
                     });
                 }//header-scripts_end
                 //footer-scripts_start 
-                else if(elementId === "my-footer"){
+                else if (elementId === "my-footer") {
                     const footerScript = document.createElement("script");
                     footerScript.src = "https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js";
-                    footerScript.onload = function(){
+                    footerScript.onload = function () {
                         AOS.init();
                     };
 
