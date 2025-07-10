@@ -1,4 +1,4 @@
-const pageTitle = document.title.trim();
+const pageTitle = document.title.replace(/\s+/g, ' ').trim();
 
 const allMainItems = document.querySelectorAll('.header-menu .nav-menu__item');
 
@@ -7,8 +7,7 @@ let contactLi = null;
 for (let i = 0; i < allMainItems.length; i++) {
     let li = allMainItems[i];
     let link = li.querySelector('a.nav-menu__link');
-
-    if (link && link.textContent.trim() === 'تماس با ما') {
+    if (link && link.textContent.replace(/\s+/g, ' ').trim() === 'تماس با ما') {
         contactLi = li;
         break; 
     }
@@ -20,7 +19,7 @@ for (let i = 0; i < allMainItems.length; i++) {
   let li = allMainItems[i];
   let link = li.querySelector('a.nav-menu__link');
 
-  if (link && link.textContent.trim() === 'صفحات') {
+  if (link && link.textContent.replace(/\s+/g, ' ').trim() === 'صفحات') {
     pagesLi = li;
     break; 
   }
@@ -50,7 +49,7 @@ else if (subPageTitles.includes(pageTitle)) {
 
     Array.from(pageSubItems).forEach(subLi => {
         const link = subLi.querySelector('a');
-        if (link && link.textContent.trim() === pageTitle) {
+        if (link && link.textContent.replace(/\s+/g, ' ').trim() === pageTitle) {
             subLi.classList.add("activePage");
         }
     });
