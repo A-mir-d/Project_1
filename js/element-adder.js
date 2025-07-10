@@ -14,7 +14,7 @@ window.onload = function () {
                 if (elementId === "my-header") {
                     const scriptPath = ["js/drop-down_menu_opener.js", "js/timer_counter.js",
                         "js/header_search-box_drop-down_opener.js", "js/nav-menu_title_highlighter.js",
-                        "js/side-bar_opener.js"]
+                        "js/side-bar_opener.js","js/side-bar_menu-items_opener.js"]
                     scriptPath.forEach(function (path) {
                         const headerScript = document.createElement("script");
                         headerScript.src = path;
